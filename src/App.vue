@@ -1,38 +1,13 @@
 <template>
   <v-app>
-
-
     <v-main>
-
-      <!-- Provides the application the proper gutter -->
-      <v-container fluid>
-
-        <!-- If using vue-router -->
+      <v-container fluid class="text-center">
+        <h2 class="text-h1 font-weight-black mt-3">The cat 🐱</h2>
+        <p class="pa-2">귀여운 고양이가 보고싶을때 힐링하러오는 고양이 휴게소...</p>
         <router-view></router-view>
       </v-container>
     </v-main>
-
-    <v-footer app>
-      <!-- -->
-    </v-footer>
-        <v-bottom-navigation
-    :value="value"
-    color="primary"
-    >
-    <v-btn>
-      <span>Recents</span>
-      <v-icon>mdi-history</v-icon>
-    </v-btn>
-    <v-btn>
-      <span>Favorites</span>
-      <v-icon>mdi-heart</v-icon>
-    </v-btn>
-    <v-btn>
-      <span>Nearby</span>
-      <v-icon>mdi-map-marker</v-icon>
-    </v-btn>
-  </v-bottom-navigation>
-  </v-app>
+  </v-app>      
 </template>
 
 <script>
@@ -41,10 +16,25 @@ export default {
   name: 'App',
 
   data: () => ({
-    value: 1 ,
-    
-    
+    value: 'home' ,
     
     }),
 };
 </script>
+
+<style >
+body {
+  background-color: aliceblue;
+}
+
+.v-item-group.v-bottom-navigation {
+  align-items: center;
+}
+
+.v-application {
+  max-width: 700px;
+  margin: 20px auto;
+  border-radius: 15px;
+}
+
+</style>

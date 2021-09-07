@@ -11,16 +11,17 @@
           >
           </v-select>
         </v-flex>
-        <v-btn large @click="getData">
-          새로고침
+        <v-btn 
+          large
+          color="secondary ml-3" 
+          @click="getData">
+          다른 고양이 볼래!
         </v-btn>
       </v-layout>
-      <v-layout>
-        <v-card>
-          <v-img :src="image.url">
+          <v-img 
+          :src="image.url"
+          >
           </v-img>
-        </v-card>
-      </v-layout>
     </v-container>
   </v-main>
 </template>
